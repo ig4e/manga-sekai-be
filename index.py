@@ -23,5 +23,5 @@ def json_example():
       headers = {'Content-Type': 'application/x-www-form-urlencoded'}
       return scraper.post(request_data['url'], headers=headers, data=request_data['data']).text
   
-
-app.run('0.0.0.0', process.env.PORT or 5000)
+port = int(os.environ.get('PORT', 5000))
+app.run('0.0.0.0', port=port)
