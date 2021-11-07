@@ -24,4 +24,4 @@ def json_example():
       return scraper.post(request_data['url'], headers=headers, data=request_data['data']).text
   
 
-app.run('0.0.0.0', process.env.PORT || process.env.port || 5000)
+app.run('0.0.0.0', process.env.PORT or 5000)
