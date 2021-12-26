@@ -1,6 +1,7 @@
 absl-py==0.13.0
 asgiref==3.4.1
 astunparse==1.6.3
+flask-compress==1.10.1
 cachetools==4.2.2
 certifi==2021.5.30
 charset-normalizer==2.0.4
