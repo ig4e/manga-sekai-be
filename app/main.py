@@ -2,7 +2,7 @@ import cloudscraper
 from flask import Flask
 from flask import request
 
-app = Flask(__name__) #sets the "app" variable to a Flask instance
+app = Flask(__name__) #sets the "app" variable to a Flask instance111111
 scraper = cloudscraper.CloudScraper()
 
 
