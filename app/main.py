@@ -6,7 +6,7 @@ from flask_compress import Compress
 app = Flask(__name__) #sets the "app" variable to a Flask instance111111
 Compress(app)
 scraperMain = cloudscraper.CloudScraper()
-scraper = requests.Session()
+scraper = scraperMain.Session()
 
 @app.route('/')
 def mainR():
