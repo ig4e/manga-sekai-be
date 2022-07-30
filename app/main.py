@@ -18,6 +18,6 @@ def json_example():
     if request_data['get']:
       return scraper.get(request_data['url']).text
     else:
-      headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+      headers = {'Content-Type': 'application/x-www-form-urlencoded', 'x-requested-with': 'XMLHttpRequest' }
       return scraper.post(request_data['url'], headers=headers, data=request_data['data']).text
   
